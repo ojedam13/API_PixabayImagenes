@@ -87,7 +87,7 @@ function mostrarImagenes(imagenes) {
                 <div class="p-4">
                     <p class="font-bold">${likes} <span class="font-light"> Me Gusta</span></p>
                     <p class="font-bold">${views} <span class="font-light"> Veces Vista</span></p>
-                    <a class="block w-full bg-blue-800 hover:bg-blue-500 text-white uppercase font-bold text-center rounded mt-5 p-1"
+                    <a class="block w-full text-white uppercase font-bold text-center rounded mt-5 p-1 boton"
                     href="${largeImageURL}" target="_blank" rel="noopener noreferrer">
                     Ver Imagen
                     </a>
@@ -119,7 +119,7 @@ function imprimirPaginador() {
         boton.href = '#';
         boton.dataset.pagina = value;
         boton.textContent = value;
-        boton.classList.add('siguiente', 'bg-yellow-400', 'px-4', 'py-1', 'mr-2', 'font-bold', 'mb-4', 'rounded');
+        boton.classList.add('siguiente', 'buscarImg', 'px-4', 'py-1', 'mr-2', 'font-bold', 'mb-4', 'rounded');
 
         boton.onclick = () => {
             paginaActual = value;
